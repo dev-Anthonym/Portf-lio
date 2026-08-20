@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seu Nome · Portfólio de Desenvolvimento Web</title>
+<meta name="description" content="Portfólio de desenvolvimento web de Seu Nome — projetos, habilidades e contato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+  <!-- ===== NAV ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo">seu<span class="logo-accent">.dev</span><span class="cursor" aria-hidden="true">_</span></a>
+
+      <nav class="tab-nav" id="tabNav">
+        <a href="#home" class="tab-link active"><span class="tab-dot"></span>home.html</a>
+        <a href="#sobre" class="tab-link"><span class="tab-dot"></span>sobre.css</a>
+        <a href="#projetos" class="tab-link"><span class="tab-dot"></span>projetos.js</a>
+        <a href="#contato" class="tab-link"><span class="tab-dot"></span>contato.md</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Alternar modo claro/escuro" title="Alternar tema">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="menuToggle" class="icon-btn menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HOME / HERO ===== -->
+    <section id="home" class="section hero reveal">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">// desenvolvimento web</p>
+          <h1>Olá, eu sou <span class="highlight">Seu Nome</span></h1>
+          <p class="hero-typed"><span id="typedText"></span><span class="type-cursor">|</span></p>
+          <p class="hero-lede">
+            Estudante de <strong>Seu Curso</strong>, apaixonado(a) por transformar ideias em interfaces
+            rápidas, acessíveis e bem construídas. Foco em front-end moderno e boas práticas de código.
+          </p>
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="#contato" class="btn btn-ghost">Falar comigo</a>
+          </div>
+        </div>
+
+        <div class="terminal-window" aria-hidden="false">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="terminal-tab">apresentacao.js</span>
+          </div>
+          <pre class="terminal-body"><code><span class="tok-key">const</span> <span class="tok-var">desenvolvedor</span> = {
+  <span class="tok-prop">nome</span>: <span class="tok-str">"Seu Nome"</span>,
+  <span class="tok-prop">curso</span>: <span class="tok-str">"Seu Curso"</span>,
+  <span class="tok-prop">area</span>: <span class="tok-str">"Desenvolvimento Web"</span>,
+  <span class="tok-prop">objetivo</span>: <span class="tok-str">"Atuar como dev front-end"</span>,
+  <span class="tok-prop">disponivel</span>: <span class="tok-bool">true</span>,
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="section reveal">
+      <p class="eyebrow">// sobre mim</p>
+      <h2 class="section-title">Quem escreve este código</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Sou estudante de <strong>Seu Curso</strong>, com interesse principal em
+            <strong>desenvolvimento web</strong> — do layout ao deploy. Gosto de entender como as
+            interfaces funcionam por baixo dos panos e de transformar protótipos em produtos reais.
+          </p>
+          <p>
+            Atualmente estou estudando fundamentos sólidos de front-end e dando os primeiros passos em
+            back-end, sempre buscando escrever código legível e testável. Meu objetivo é evoluir para uma
+            vaga de desenvolvedor(a) front-end e, no futuro, atuar em times full-stack.
+          </p>
+
+          <div class="goals">
+            <div class="goal-card">
+              <span class="goal-icon">🎯</span>
+              <div>
+                <h3>Objetivo acadêmico</h3>
+                <p>Concluir o curso com uma base forte em lógica, algoritmos e desenvolvimento web.</p>
+              </div>
+            </div>
+            <div class="goal-card">
+              <span class="goal-icon">🚀</span>
+              <div>
+                <h3>Objetivo profissional</h3>
+                <p>Conseguir uma oportunidade como desenvolvedor(a) front-end júnior.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="terminal-window skills-window">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="terminal-tab">package.json</span>
+          </div>
+          <pre class="terminal-body"><code>{
+  <span class="tok-prop">"dependencies"</span>: {
+    <span class="tok-str">"html"</span>: <span class="tok-str">"^5.0.0"</span>,
+    <span class="tok-str">"css"</span>: <span class="tok-str">"^3.0.0"</span>,
+    <span class="tok-str">"javascript"</span>: <span class="tok-str">"^ES6"</span>,
+    <span class="tok-str">"git"</span>: <span class="tok-str">"latest"</span>
+  },
+  <span class="tok-prop">"devDependencies"</span>: {
+    <span class="tok-str">"react"</span>: <span class="tok-str">"estudando"</span>,
+    <span class="tok-str">"node"</span>: <span class="tok-str">"estudando"</span>
+  }
+}</code></pre>
+        </div>
+      </div>
+
+      <div class="skills-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Git &amp; GitHub</span>
+        <span class="tag">Responsividade</span>
+        <span class="tag">UI Design</span>
+        <span class="tag">React <em>(estudando)</em></span>
+        <span class="tag">Node.js <em>(estudando)</em></span>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos" class="section reveal">
+      <p class="eyebrow">// projetos</p>
+      <h2 class="section-title">Coisas que eu construí</h2>
+      <p class="section-sub">Uma seleção de projetos de estudo e prática em desenvolvimento web.</p>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-thumb thumb-1" aria-hidden="true">
+            <span class="thumb-tag">01</span>
+          </div>
+          <div class="project-body">
+            <h3>Loja Virtual (E-commerce UI)</h3>
+            <p>
+              Interface de uma loja online com catálogo de produtos, carrinho de compras e layout
+              responsivo, construída para praticar organização de componentes em CSS.
+            </p>
+            <div class="project-stack">
+              <span class="tag tag-sm">HTML</span>
+              <span class="tag tag-sm">CSS Grid</span>
+              <span class="tag tag-sm">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/seuusuario/loja-virtual-ui" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">Código</a>
+              <a href="#" class="btn btn-sm btn-primary project-more" data-title="Loja Virtual (E-commerce UI)" data-desc="Interface completa de e-commerce com listagem de produtos, filtro por categoria, carrinho persistente em memória e checkout simulado. Foco em componentização de CSS e boas práticas de acessibilidade em formulários.">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb thumb-2" aria-hidden="true">
+            <span class="thumb-tag">02</span>
+          </div>
+          <div class="project-body">
+            <h3>Gerenciador de Tarefas</h3>
+            <p>
+              Aplicação para criar, marcar como concluída e excluir tarefas, com dados salvos
+              localmente no navegador e filtros por status.
+            </p>
+            <div class="project-stack">
+              <span class="tag tag-sm">JavaScript</span>
+              <span class="tag tag-sm">DOM API</span>
+              <span class="tag tag-sm">LocalStorage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/seuusuario/gerenciador-tarefas" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">Código</a>
+              <a href="#" class="btn btn-sm btn-primary project-more" data-title="Gerenciador de Tarefas" data-desc="To-do list com manipulação de DOM em JavaScript puro, persistência de dados via LocalStorage, filtros (todas / pendentes / concluídas) e animações sutis de transição ao adicionar ou remover itens.">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-thumb thumb-3" aria-hidden="true">
+            <span class="thumb-tag">03</span>
+          </div>
+          <div class="project-body">
+            <h3>Dashboard de Clima</h3>
+            <p>
+              Painel que consome uma API pública de previsão do tempo e exibe temperatura,
+              condições climáticas e busca por cidade.
+            </p>
+            <div class="project-stack">
+              <span class="tag tag-sm">JavaScript</span>
+              <span class="tag tag-sm">API Fetch</span>
+              <span class="tag tag-sm">CSS Flexbox</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/seuusuario/dashboard-clima" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">Código</a>
+              <a href="#" class="btn btn-sm btn-primary project-more" data-title="Dashboard de Clima" data-desc="Consumo de API pública de previsão do tempo usando fetch e async/await, com tratamento de erros, estado de carregamento e busca de cidades em tempo real.">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="section reveal">
+      <p class="eyebrow">// contato</p>
+      <h2 class="section-title">Vamos conversar</h2>
+      <p class="section-sub">Estou aberto(a) a oportunidades, trocas de ideias e feedback sobre meus projetos.</p>
+
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a class="contact-card" href="https://github.com/seuusuario" target="_blank" rel="noopener">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <h3>GitHub</h3>
+              <p>github.com/seuusuario</p>
+            </div>
+          </a>
+          <a class="contact-card" href="https://linkedin.com/in/seuusuario" target="_blank" rel="noopener">
+            <span class="contact-icon">💼</span>
+            <div>
+              <h3>LinkedIn</h3>
+              <p>linkedin.com/in/seuusuario</p>
+            </div>
+          </a>
+          <a class="contact-card" href="mailto:seuemail@exemplo.com">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <h3>E-mail</h3>
+              <p>seuemail@exemplo.com</p>
+            </div>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Como você se chama?" required>
+            <span class="form-error" data-for="name"></span>
+          </div>
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            <span class="form-error" data-for="email"></span>
+          </div>
+          <div class="form-row">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="4" placeholder="Sobre o que você quer falar?" required></textarea>
+            <span class="form-error" data-for="message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Feito com <span class="heart">&lt;/&gt;</span> por Seu Nome — <span id="year"></span></p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
+
+  <!-- ===== MODAL DE PROJETO ===== -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
